@@ -132,9 +132,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onUserLeaveHint() {
-        for (fragment in supportFragmentManager.fragments) {
-            if (fragment is PlayerFragment && fragment.isVisible) {
-                fragment.onUserLeaveHint()
+   enterPipMode()
             }
         }
     }
